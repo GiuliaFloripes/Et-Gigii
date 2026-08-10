@@ -91,6 +91,10 @@ section {
     display: inline-block;
 }
 
+.btn:hover{
+    letter-spacing:0.1rem ;
+}
+
 .home-container{
     margin-top: 150px;
     background: url("img/home.jpeg");
@@ -113,7 +117,7 @@ section {
 }
 
 .content h3{
-    color: black;
+    color: var(--main-color);
     font-size: 2rem;
 }
 
@@ -185,4 +189,48 @@ section {
     padding: 1rem 0;
     line-height: 1.8;
     margin: 0;
+}
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu .box-container .box{
+    background-color: var(--main-color);
+    text-align: center;
+    border: var(--border);
+    border-radius: 3px;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.menu .box-container .box img{
+  
+    height: 32rem;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.menu .box-container .box:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.menu .box-container .box h3{
+    color: #000;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price{
+    color: #000;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+}
+
+.price span {
+    color: red;
 }
