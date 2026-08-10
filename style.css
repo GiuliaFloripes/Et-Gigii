@@ -1,0 +1,188 @@
+:root {
+    --main-color: #D3AD7F;
+    --bg: #FFF5E3;
+    --border:0.1rem solid rgba{2555.255.255,0.3};
+    font-size: 15px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: "Limelight", sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background: url(img/fundo.jpeg);
+    border-bottom: 1px solid #ccc;
+}
+
+.logo img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;   
+    border: 3px solid #000;
+    object-fit: cover;    /* Evita deformar a imagem */
+}
+
+.header section {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.navbar a{
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    color: black;
+    padding: 10px;
+    margin-top: 35px;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5;
+    font-size: 1.8rem;
+}
+
+.icons img{
+    margin: 1rem;
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+.icons img:hover{
+    width: 40px;
+    height: 40px;
+}
+
+.btn {
+    background:black;
+    color: #e02623;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.home-container{
+    margin-top: 150px;
+    background: url("img/home.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.home-container section{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content {
+    display: inline-block;
+    max-width: 100rem;
+    align-items: start;
+    position: relative;
+    top: -150px;
+}
+
+.content h3{
+    color: black;
+    font-size: 2rem;
+}
+
+.content p{
+    color: #000;
+    font-size: 1rem;
+    font-weight: 50;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.about {
+    width: 100%;
+    background: url("img/fundo.jpeg");
+    align-items: start;
+    position: relative;
+    top: -4px;
+}
+
+.tittle {
+    font-size: 3rem;
+    color: var(--main-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.tittle span {
+    color: black;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    gap: 0;
+}
+
+.container-image {
+    flex: 0 0 500px;
+}
+
+.sobre-mim {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px 0 0 10px;
+}
+
+.about .row .about-content {
+    flex: 1;
+    padding: 2rem;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+.about .row .about-content h3 {
+    font-size: 2rem;
+    color: #000;
+    margin: 0;
+}
+
+.about .row .about-content p {
+    font-size: 1rem;
+    color: #000;
+    padding: 1rem 0;
+    line-height: 1.8;
+    margin: 0;
+}
