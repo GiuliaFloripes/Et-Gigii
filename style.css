@@ -678,11 +678,11 @@ section {
     }
 
     .menu .box-container .box img{
-        width: 90%;
-        height: 20rem;
-        object-fit: cover;
-        overflow: hidden;
-    }
+    width: 100%;
+    height: 32rem;
+    object-fit: contain;
+    background-color: #fff; /* preenche o espaço vazio */
+}
 
     .menu .box-container .box h3{
         color: #000;
