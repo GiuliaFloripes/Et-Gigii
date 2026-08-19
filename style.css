@@ -681,7 +681,7 @@ section {
     width: 100%;
     height: 32rem;
     object-fit: contain;
-    background-color: #fff; /* preenche o espaço vazio */
+    background-color: rgb(255, 250, 251); 
 }
 
     .menu .box-container .box h3{
