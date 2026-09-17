@@ -241,6 +241,85 @@ section {
     margin: 0;
 }
 
+.container-comissao {
+    width: 100%;
+    background: url("img/fundo.jpeg");
+    align-items: start;
+    position: relative;
+    top: -4px;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.container-comissao h3 {
+    font-size: 2rem;
+    color: var(--main-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.container-comissao h3 span {
+    color: black;
+}
+
+.container-comissao p {
+    font-size: 1rem;
+    color: #000;
+    padding: 1rem 0;
+    line-height: 1.8;
+    margin: 0;
+}   
+
+.menu-desenhos {
+    display: block; 
+}
+
+.menu-desenhos .tittle {
+    margin-bottom: 1.5rem;
+    color:#000
+}
+
+.menu-desenhos .galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.menu-desenhos .box-desenhos {
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--border);
+    border-radius: 3px;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.menu-desenhos .box-galeria {
+    width: 100%;
+}
+
+.menu-desenhos .box-galeria img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain; 
+    border-radius: 3px;
+}
+
+.menu-desenhos .box-galeria img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    border-radius: 3px;
+    transition: transform 0.3s ease;
+}
+
+.menu-desenhos .box-galeria img:hover {
+    transform: scale(1.1);
+}
+
 .menu .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
@@ -261,7 +340,7 @@ section {
         aspect-ratio: 3 / 4;   
         height: auto;
         object-fit: cover;
-    }
+}
 
 .menu .box-container .box:hover{
     transform: translateY(-5px);
@@ -540,6 +619,10 @@ section {
         font-size: 0.9rem;
     }
 
+    .menu-desenhos .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .menu .box-container .box img{
         width: 100%;
         aspect-ratio: 3 / 4;   
@@ -551,6 +634,7 @@ section {
         width: 70px;
         height: 70px;
     }
+
 
     .end h1{
         font-size: 2rem;
@@ -669,6 +753,10 @@ section {
 
     .tittle {
         font-size: 2rem;
+    }
+
+    .menu-desenhos .galeria-grid {
+        grid-template-columns: 1fr;
     }
 
     .menu .box-container{
